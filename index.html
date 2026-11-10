@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="pantalla">
+            <div id="operacion">0</div>
+            <div id="numero">0</div>
+        </div>
+
+        <button id="btn-limpiar" onclick="limpiarPantalla()" class="btn btn-accion">AC</button>
+        <button id="btn-signo" onclick="cambiarSigno()" class="btn btn-accion">+/-</button>
+        <button id="btn-porcentaje" onclick="calcularPorcentaje()" class="btn btn-accion">%</button>
+        <button id="btn-raiz" onclick="calcularRaiz()" class="btn btn-accion">&#8730;</button>
+
+        <button id="btn-7" onclick="escribirNumero('7')" class="btn btn-numero">7</button>
+        <button id="btn-8" onclick="escribirNumero('8')" class="btn btn-numero">8</button>
+        <button id="btn-9" onclick="escribirNumero('9')" class="btn btn-numero">9</button>
+        <button id="btn-dividir" onclick="elegirOperacion('/')" class="btn btn-operador">&#x00F7;</button>
+
+        <button id="btn-4" onclick="escribirNumero('4')" class="btn btn-numero">4</button>
+        <button id="btn-5" onclick="escribirNumero('5')" class="btn btn-numero">5</button>
+        <button id="btn-6" onclick="escribirNumero('6')" class="btn btn-numero">6</button>
+        <button id="btn-multiplicar" onclick="elegirOperacion('*')" class="btn btn-operador">×</button>
+
+        <button id="btn-1" onclick="escribirNumero('1')" class="btn btn-numero">1</button>
+        <button id="btn-2" onclick="escribirNumero('2')" class="btn btn-numero">2</button>
+        <button id="btn-3" onclick="escribirNumero('3')" class="btn btn-numero">3</button>
+        <button id="btn-restar" onclick="elegirOperacion('-')" class="btn btn-operador">−</button>
+
+        <button id="btn-0" onclick="escribirNumero('0')" class="btn btn-numero btn-cero">0</button>
+        <button id="btn-punto" onclick="escribirPunto()" class="btn btn-numero">.</button>
+        <button id="btn-sumar" onclick="elegirOperacion('+')" class="btn btn-operador">+</button>
+
+        <button id="btn-cuadrado" onclick="calcularCuadrado()" class="btn btn-accion">x²</button>
+        <button id="btn-logaritmo" onclick="calcularLogaritmo()" class="btn btn-accion">log</button>
+        <button id="btn-borrar" onclick="borrarUltimoDigito()" class="btn btn-accion">&#x232B;</button>
+        <button id="btn-igual" onclick="calcularResultado()" class="btn btn-igual">=</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
